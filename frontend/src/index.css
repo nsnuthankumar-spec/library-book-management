@@ -1,0 +1,150 @@
+/* ===============================
+   RESET & BASE
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  min-height: 100vh;
+  color: #e5e7eb;
+  background: #020617;
+}
+
+/* ===============================
+   PAGE BACKGROUNDS (BOOK THEME)
+================================ */
+
+/* Dashboard */
+.page-dashboard {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)),
+    url("/books-bg.jpg") center / cover no-repeat;
+}
+
+/* Books */
+.page-books {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(10, 20, 40, 0.85), rgba(5, 10, 25, 0.9)),
+    url("/books-bg.jpg") center / cover no-repeat;
+}
+
+/* Add Book */
+.page-add {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(10, 20, 40, 0.85), rgba(5, 10, 25, 0.9)),
+    url("/books-bg.jpg") center / cover no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+/* Activity */
+.page-activity {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(10, 20, 40, 0.85), rgba(5, 10, 25, 0.95)),
+    url("/books-bg.jpg") center / cover no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+/* ===============================
+   GLASS CARD (SINGLE SOURCE)
+================================ */
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 24px;
+  padding: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45);
+}
+
+/* Card title helper */
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+/* ===============================
+   FORM ELEMENTS
+================================ */
+input,
+select {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  padding: 10px 14px;
+  border-radius: 12px;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.4);
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+button {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: white;
+}
+
+.btn-green {
+  background: #16a34a;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.btn-green:hover { background: #15803d; }
+
+.btn-blue {
+  background: #2563eb;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.btn-blue:hover { background: #1d4ed8; }
+
+.btn-red {
+  background: #dc2626;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.btn-red:hover { background: #b91c1c; }
+
+.nav-link {
+  display: block;
+  padding: 10px 14px;
+  border-radius: 10px;
+  color: #cbd5f5;
+  transition: 0.2s;
+}
+
+.nav-link:hover {
+  background: #1e293b;
+}
+
+.nav-link.active {
+  background: #2563eb;
+  color: white;
+}
